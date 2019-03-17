@@ -6,6 +6,6 @@
 
 The front-end for palava.tv **[PalavaPortal](https://github.com/palavatv/palava-portal)**, which bundles the **[PalavaClient](https://github.com/palavatv/palava-client)**, our client-side library which speaks the palava protocol. The signaling backend is provided by **[SignalTower](https://github.com/farao/signaltower)**. If you prefer, you can also use the Ruby-based [PalavaMachine](https://github.com/palavatv/palava-machine) for signaling.
 
-## Setup
+## META REPOSITORY
 
-…
+This repository is a [central  place for collecting issues](https://github.com/palavatv/palava/issues) around palava.tv. 
