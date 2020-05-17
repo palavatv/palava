@@ -1,0 +1,6 @@
+[submodule "signaltower"]
+	path = signaltower
+	url = https://github.com/palavatv/signaltower.git
+[submodule "palava-web"]
+	path = palava-web
+	url = https://github.com/palavatv/palava-web.git
