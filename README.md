@@ -1,11 +1,21 @@
 # palava.tv
 
-[palava.tv](https://palava.tv) is simplistic video communication with your friends and colleagues from within your web browser. It is build on top of the [WebRTC](https://webrtc.org/) technology. No registration or browser plugin required.
+[palava](https://github.com/palavatv/palava) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
 
-## The palava Stack
+## Bug reports and feature requests
 
-The front-end for palava.tv **[PalavaPortal](https://github.com/palavatv/palava-portal)**, which bundles the **[PalavaClient](https://github.com/palavatv/palava-client)**, our client-side library which speaks the palava protocol. The signaling backend is provided by **[SignalTower](https://github.com/farao/signaltower)**. If you prefer, you can also use the Ruby-based [PalavaMachine](https://github.com/palavatv/palava-machine) for signaling.
+Please use this repositories issue system to notify us about bugs you encounter when using palava.tv: https://github.com/palavatv/palava/issues/new/choose
 
-## META REPOSITORY
+## The palava.tv Stack
 
-This repository is a [central  place for collecting issues](https://github.com/palavatv/palava/issues) around palava.tv. 
+The three main ingredients of palava.tv are the following:
+
+Project | Description
+--------|------------
+[signaltower](https://github.com/palavatv/signaltower)* | The websocket endpoint which manages the meeting rooms, implemented in Elixir
+[palava-web](https://github.com/palavatv/palava-web) | The Vue.js application that lets you access palava.tv
+[palava-client](https://github.com/palavatv/palava-client) | The JavaScript library which communicates with the signaltower
+
+(*) The older Ruby-based [PalavaMachine](https://github.com/palavatv/palava-machine) is still available and functions as a drop-in replacement for the signaltower
+
+
