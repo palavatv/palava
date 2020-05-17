@@ -1,10 +1,10 @@
 # palava.tv
 
-[palava](https://github.com/palavatv/palava) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
+[palava.v](https://palava.tv) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
 
-## Bug reports and feature requests
+## Bug Reports and Feature Requests
 
-Please use this repositories issue system to notify us about bugs you encounter when using palava.tv: https://github.com/palavatv/palava/issues/new/choose
+Please use this repository's issue system to notify us about bugs you encounter when using palava.tv: https://github.com/palavatv/palava/issues/new/choose
 
 ## The palava.tv Stack
 
@@ -16,6 +16,6 @@ Project | Description
 [palava-web](https://github.com/palavatv/palava-web) | The Vue.js application that lets you access palava.tv
 [palava-client](https://github.com/palavatv/palava-client) | The JavaScript library which communicates with the signaltower
 
-(*) The older Ruby-based [PalavaMachine](https://github.com/palavatv/palava-machine) is still available and functions as a drop-in replacement for the signaltower
+*) The older Ruby-based [palava-machine](https://github.com/palavatv/palava-machine) is still available and functions as a drop-in replacement for the signaltower
 
 
