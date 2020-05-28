@@ -1,0 +1,56 @@
+# Config example of running palava.tv behind ngnix
+
+## UPSTREAM SERVICES ##
+
+upstream palava_machine {
+  server 127.0.0.1:4233;
+}
+
+## WEB ##
+
+server {
+  listen 443 ssl;
+  # server_name palava.tv;                                              # -> add your hostname
+  # (ssl)                                                               # -> add your servr ssl configuration 
+
+  root /path/to/palava-web/dist/;                                       # -> add correct path
+
+  location / {
+    if (-f $request_filename) {
+      expires max;
+      break;
+    }
+    rewrite ^/.+$ / last;
+  }
+}
+
+## MACHINE ##
+
+server {
+  listen 443 ssl;
+  # server_name machine.palava.tv;                                      # -> add url of signaltower/palava-machine
+  # (ssl)                                                               # -> add your servr ssl configuration 
+
+  root /some/path/;                                                     # -> optional: create no_upgrade.html for non-ws requests
+  try_files /$upgrade_status.html @machine;
+
+  location @machine {
+    proxy_pass http://palava_machine;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_read_timeout 86400;
+  }
+}
+
+## HTTP REDIRECTS ##
+
+server {
+  listen 80;
+  # server_name palava.tv machine.palava.tv;                            # -> add server names of above configs
+
+  location / {
+    return 301 https://$host$request_uri;
+  }
+}
+

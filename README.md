@@ -18,4 +18,6 @@ Project | Description
 
 *) The older Ruby-based [palava-machine](https://github.com/palavatv/palava-machine) is still available and functions as a drop-in replacement for the signaltower
 
+## Setup your own palava.tv
 
+Detailed instructions will follow soon. You can find an example nginx config file [here](https://github.com/palavatv/palava/blob/master/config/nginx/palava).
