@@ -1,6 +1,6 @@
 # palava.tv
 
-[palava.v](https://palava.tv) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
+[palava.tv](https://palava.tv) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
 
 ## Bug Reports and Feature Requests
 
